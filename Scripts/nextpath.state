@@ -1,0 +1,19 @@
+// This script loads level3.eem when 'E' is pressed near a wall.
+
+// Check player position
+player check position map.playerX map.playerY map.playerZ
+
+// Define wall coordinates
+map.wallX1 = 100
+map.wallY1 = 100
+map.wallX2 = 150
+map.wallY2 = 150
+
+// Check if player is near the wall
+if $map.playerX >= $map.wallX1 && $map.playerX <= $map.wallX2 &&
+   $map.playerY >= $map.wallY1 && $map.playerY <= $map.wallY2 {
+    // When 'E' is pressed
+    if $input.keyE {
+        map start // Start level3.eem
+    }
+}

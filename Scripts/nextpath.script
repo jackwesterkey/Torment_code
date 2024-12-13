@@ -1,0 +1,8 @@
+// This script loads level3.eem when 'E' is pressed.
+
+bind 1 Terminal // Binds the 'E' key to this script
+
+// When 'E' is pressed
+if $input.keyE {
+    map start // This will start the map defined in your settings
+}
